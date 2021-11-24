@@ -22,6 +22,8 @@ public class CheckoutPage {
     private WebElement billingAddressPhoneNumber;
     @FindBy(id = "order_bill_address_attributes_zipcode")
     private WebElement billingAddressZipCode;
+    @FindBy(id="save_user_address")
+    private WebElement saveMyAddressCheckBox;
     @FindBy(name = "commit")
     private WebElement saveAndContinueButton;
     @FindBy(id = "order_shipments_attributes_0_selected_shipping_rate_id_1392")
@@ -46,8 +48,8 @@ public class CheckoutPage {
 
         billingAddressZipCode.sendKeys(zipCode);
         billingAddressPhoneNumber.sendKeys(phone);
+        saveMyAddressCheckBox.click();
         saveAndContinueButton.click();
-        //saveAndContinueButton.click();
     }
 
     public void selectShipping() {
