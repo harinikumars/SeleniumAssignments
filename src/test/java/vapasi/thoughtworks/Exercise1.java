@@ -1,4 +1,4 @@
-package exercise1;
+package vapasi.thoughtworks;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

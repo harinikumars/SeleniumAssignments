@@ -22,8 +22,7 @@ public class ShoppingCartPage {
     public String cartDetails() {
 
         //Go to cart and get the cart value
-        String cartValueActual = totalCartValue.getText();
-        return cartValueActual;
+        return totalCartValue.getText();
     }
     public void continueToCheckOut(){
         checkoutButton.click();
