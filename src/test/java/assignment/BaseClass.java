@@ -24,7 +24,7 @@ public class BaseClass {
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
         driver = new ChromeDriver();
-        driver.get("https://spree-vapasi-prod.herokuapp.com/");
+        driver.get("https://spree-vapasi.herokuapp.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
